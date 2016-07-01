@@ -9,9 +9,13 @@ place your cert files in:
 
 `/usr/share/nginx/html/codelabs/src/cert/*`
 
-set Environment variable for MYSQL_ROOT_PASSWORD in your shell.
+set Environment variable for MYSQL_ROOT_PASSWORD inside a file called .env
 
-`export MYSQL_ROOT_PASSWORD=mysecretpassword`
+`
+$ cat .env
+MYSQL_ROOT_PASSWORD=mysecretpassword
+MYSQL_DATABASE=mydatabasename
+`
 
 
 ```

@@ -1,8 +1,6 @@
 db:
   image: mysql
-  environment:
-    MYSQL_DATABASE: ninja
-    MYSQL_ROOT_PASSWORD
+  env_file: .env
 
 app:
   image: invoiceninja/invoiceninja
@@ -12,7 +10,7 @@ app:
     - ./logo:/var/www/app/public/logo
     - ./storage:/var/www/app/storage 
 
-time:
+web:
   image: nginx
   volumes:
     - ./nginx.conf:/etc/nginx/nginx.conf:ro
