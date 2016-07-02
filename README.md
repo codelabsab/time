@@ -7,7 +7,7 @@ The easiest way to try this image is via docker compose :
 ## Prerequisites
 place your cert files in: 
 
-`/usr/share/nginx/html/codelabs/src/cert/*`
+`/usr/share/html/time/cert/*`
 
 set Environment variable for MYSQL_ROOT_PASSWORD inside a file called .env
 
