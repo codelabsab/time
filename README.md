@@ -15,6 +15,7 @@ set Environment variable for MYSQL_ROOT_PASSWORD inside a file called .env
 $ cat .env
 MYSQL_ROOT_PASSWORD=mysecretpassword
 MYSQL_DATABASE=mydatabasename
+APP_KEY=SomeRandomThirtyTwoCharacterString
 `
 
 

@@ -9,6 +9,7 @@ app:
   volumes:
     - ./logo:/var/www/app/public/logo
     - ./storage:/var/www/app/storage 
+    - ./app.php:/var/www/app/app.php
 
 web:
   image: nginx
