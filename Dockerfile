@@ -8,7 +8,7 @@ MAINTAINER Samuel Laulhau <sam@lalop.co>
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         libmcrypt-dev zlib1g-dev git libgmp-dev \
-        libfreetype6-dev libjpeg62-turbo-dev libpng12-dev \
+        libfreetype6-dev libjpeg62-turbo-dev libpng12-dev ssmtp mailutils\
     && ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/local/include/ \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-configure gmp \

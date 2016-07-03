@@ -35,5 +35,6 @@ else
 fi
 
 chown www-data .env
-
+# update ssmtp password file
+sed -i "s/replaceme/$AuthPass/g" /etc/ssmtp/ssmtp.conf
 exec "$@"
